@@ -1,0 +1,10 @@
+<!-- <form [formGroup]="form"> -->
+  <div>
+    <h1>Book Search:</h1>
+    <input type="text" size="30" placeholder="Type book title here"
+      #title (keydown)="keyPressed(title.value)">
+  </div>
+  <div *ngFor="let b of search$ | async">
+    <h3><code>{{ b.title }}</code></h3>
+  </div>
+<!-- </form> -->
